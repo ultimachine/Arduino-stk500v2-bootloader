@@ -1240,58 +1240,58 @@ unsigned long	gEepromIndex;
 void	PrintDecInt(int theNumber, int digitCnt);
 
 #ifdef _AVR_CPU_NAME_
-	prog_char	gTextMsg_CPU_Name[]			PROGMEM	=	_AVR_CPU_NAME_;
+	const char	gTextMsg_CPU_Name[]			PROGMEM	=	_AVR_CPU_NAME_;
 #else
-	prog_char	gTextMsg_CPU_Name[]			PROGMEM	=	"UNKNOWN";
+	const char	gTextMsg_CPU_Name[]			PROGMEM	=	"UNKNOWN";
 #endif
 
-	prog_char	gTextMsg_Explorer[]			PROGMEM	=	"Arduino explorer stk500V2 by MLS";
-	prog_char	gTextMsg_Prompt[]			PROGMEM	=	"Bootloader>";
-	prog_char	gTextMsg_HUH[]				PROGMEM	=	"Huh?";
-	prog_char	gTextMsg_COMPILED_ON[]		PROGMEM	=	"Compiled on = ";
-	prog_char	gTextMsg_CPU_Type[]			PROGMEM	=	"CPU Type    = ";
-	prog_char	gTextMsg_AVR_ARCH[]			PROGMEM	=	"__AVR_ARCH__= ";
-	prog_char	gTextMsg_AVR_LIBC[]			PROGMEM	=	"AVR LibC Ver= ";
-	prog_char	gTextMsg_GCC_VERSION[]		PROGMEM	=	"GCC Version = ";
-	prog_char	gTextMsg_CPU_SIGNATURE[]	PROGMEM	=	"CPU ID      = ";
-	prog_char	gTextMsg_FUSE_BYTE_LOW[]	PROGMEM	=	"Low fuse    = ";
-	prog_char	gTextMsg_FUSE_BYTE_HIGH[]	PROGMEM	=	"High fuse   = ";
-	prog_char	gTextMsg_FUSE_BYTE_EXT[]	PROGMEM	=	"Ext fuse    = ";
-	prog_char	gTextMsg_FUSE_BYTE_LOCK[]	PROGMEM	=	"Lock fuse   = ";
-	prog_char	gTextMsg_GCC_DATE_STR[]		PROGMEM	=	__DATE__;
-	prog_char	gTextMsg_AVR_LIBC_VER_STR[]	PROGMEM	=	__AVR_LIBC_VERSION_STRING__;
-	prog_char	gTextMsg_GCC_VERSION_STR[]	PROGMEM	=	__VERSION__;
-	prog_char	gTextMsg_VECTOR_HEADER[]	PROGMEM	=	"V#   ADDR   op code     instruction addr   Interrupt";
-	prog_char	gTextMsg_noVector[]			PROGMEM	=	"no vector";
-	prog_char	gTextMsg_rjmp[]				PROGMEM	=	"rjmp  ";
-	prog_char	gTextMsg_jmp[]				PROGMEM	=	"jmp ";
-	prog_char	gTextMsg_WHAT_PORT[]		PROGMEM	=	"What port:";
-	prog_char	gTextMsg_PortNotSupported[]	PROGMEM	=	"Port not supported";
-	prog_char	gTextMsg_MustBeLetter[]		PROGMEM	=	"Must be a letter";
-	prog_char	gTextMsg_SPACE[]			PROGMEM	=	" ";
-	prog_char	gTextMsg_WriteToEEprom[]	PROGMEM	=	"Writting EE";
-	prog_char	gTextMsg_ReadingEEprom[]	PROGMEM	=	"Reading EE";
-	prog_char	gTextMsg_EEPROMerrorCnt[]	PROGMEM	=	"EE err cnt=";
-	prog_char	gTextMsg_PORT[]				PROGMEM	=	"PORT";
+	const char	gTextMsg_Explorer[]			PROGMEM	=	"Arduino explorer stk500V2 by MLS";
+	const char	gTextMsg_Prompt[]			PROGMEM	=	"Bootloader>";
+	const char	gTextMsg_HUH[]				PROGMEM	=	"Huh?";
+	const char	gTextMsg_COMPILED_ON[]		PROGMEM	=	"Compiled on = ";
+	const char	gTextMsg_CPU_Type[]			PROGMEM	=	"CPU Type    = ";
+	const char	gTextMsg_AVR_ARCH[]			PROGMEM	=	"__AVR_ARCH__= ";
+	const char	gTextMsg_AVR_LIBC[]			PROGMEM	=	"AVR LibC Ver= ";
+	const char	gTextMsg_GCC_VERSION[]		PROGMEM	=	"GCC Version = ";
+	const char	gTextMsg_CPU_SIGNATURE[]	PROGMEM	=	"CPU ID      = ";
+	const char	gTextMsg_FUSE_BYTE_LOW[]	PROGMEM	=	"Low fuse    = ";
+	const char	gTextMsg_FUSE_BYTE_HIGH[]	PROGMEM	=	"High fuse   = ";
+	const char	gTextMsg_FUSE_BYTE_EXT[]	PROGMEM	=	"Ext fuse    = ";
+	const char	gTextMsg_FUSE_BYTE_LOCK[]	PROGMEM	=	"Lock fuse   = ";
+	const char	gTextMsg_GCC_DATE_STR[]		PROGMEM	=	__DATE__;
+	const char	gTextMsg_AVR_LIBC_VER_STR[]	PROGMEM	=	__AVR_LIBC_VERSION_STRING__;
+	const char	gTextMsg_GCC_VERSION_STR[]	PROGMEM	=	__VERSION__;
+	const char	gTextMsg_VECTOR_HEADER[]	PROGMEM	=	"V#   ADDR   op code     instruction addr   Interrupt";
+	const char	gTextMsg_noVector[]			PROGMEM	=	"no vector";
+	const char	gTextMsg_rjmp[]				PROGMEM	=	"rjmp  ";
+	const char	gTextMsg_jmp[]				PROGMEM	=	"jmp ";
+	const char	gTextMsg_WHAT_PORT[]		PROGMEM	=	"What port:";
+	const char	gTextMsg_PortNotSupported[]	PROGMEM	=	"Port not supported";
+	const char	gTextMsg_MustBeLetter[]		PROGMEM	=	"Must be a letter";
+	const char	gTextMsg_SPACE[]			PROGMEM	=	" ";
+	const char	gTextMsg_WriteToEEprom[]	PROGMEM	=	"Writting EE";
+	const char	gTextMsg_ReadingEEprom[]	PROGMEM	=	"Reading EE";
+	const char	gTextMsg_EEPROMerrorCnt[]	PROGMEM	=	"EE err cnt=";
+	const char	gTextMsg_PORT[]				PROGMEM	=	"PORT";
 
 
 //************************************************************************
 //*	Help messages
-	prog_char	gTextMsg_HELP_MSG_0[]		PROGMEM	=	"0=Zero addr";
-	prog_char	gTextMsg_HELP_MSG_QM[]		PROGMEM	=	"?=CPU stats";
-	prog_char	gTextMsg_HELP_MSG_AT[]		PROGMEM	=	"@=EEPROM test";
-	prog_char	gTextMsg_HELP_MSG_B[]		PROGMEM	=	"B=Blink LED";
-	prog_char	gTextMsg_HELP_MSG_E[]		PROGMEM	=	"E=Dump EEPROM";
-	prog_char	gTextMsg_HELP_MSG_F[]		PROGMEM	=	"F=Dump FLASH";
-	prog_char	gTextMsg_HELP_MSG_H[]		PROGMEM	=	"H=Help";
-	prog_char	gTextMsg_HELP_MSG_L[]		PROGMEM	=	"L=List I/O Ports";
-//	prog_char	gTextMsg_HELP_MSG_Q[]		PROGMEM	=	"Q=Quit & jump to user pgm";
-	prog_char	gTextMsg_HELP_MSG_Q[]		PROGMEM	=	"Q=Quit";
-	prog_char	gTextMsg_HELP_MSG_R[]		PROGMEM	=	"R=Dump RAM";
-	prog_char	gTextMsg_HELP_MSG_V[]		PROGMEM	=	"V=show interrupt Vectors";
-	prog_char	gTextMsg_HELP_MSG_Y[]		PROGMEM	=	"Y=Port blink";
+	const char	gTextMsg_HELP_MSG_0[]		PROGMEM	=	"0=Zero addr";
+	const char	gTextMsg_HELP_MSG_QM[]		PROGMEM	=	"?=CPU stats";
+	const char	gTextMsg_HELP_MSG_AT[]		PROGMEM	=	"@=EEPROM test";
+	const char	gTextMsg_HELP_MSG_B[]		PROGMEM	=	"B=Blink LED";
+	const char	gTextMsg_HELP_MSG_E[]		PROGMEM	=	"E=Dump EEPROM";
+	const char	gTextMsg_HELP_MSG_F[]		PROGMEM	=	"F=Dump FLASH";
+	const char	gTextMsg_HELP_MSG_H[]		PROGMEM	=	"H=Help";
+	const char	gTextMsg_HELP_MSG_L[]		PROGMEM	=	"L=List I/O Ports";
+//	const char	gTextMsg_HELP_MSG_Q[]		PROGMEM	=	"Q=Quit & jump to user pgm";
+	const char	gTextMsg_HELP_MSG_Q[]		PROGMEM	=	"Q=Quit";
+	const char	gTextMsg_HELP_MSG_R[]		PROGMEM	=	"R=Dump RAM";
+	const char	gTextMsg_HELP_MSG_V[]		PROGMEM	=	"V=show interrupt Vectors";
+	const char	gTextMsg_HELP_MSG_Y[]		PROGMEM	=	"Y=Port blink";
 
-	prog_char	gTextMsg_END[]				PROGMEM	=	"*";
+	const char	gTextMsg_END[]				PROGMEM	=	"*";
 
 
 //************************************************************************
