@@ -272,7 +272,7 @@ LICENSE:
 	#define BOOTSIZE 2048
 #endif
 
-#define APP_END  (FLASHEND -(2*BOOTSIZE) + 1)
+#define APP_END  (FLASHEND -(BOOTSIZE) + 1)
 
 /*
  * Signature bytes are not available in avr-gcc io_xxx.h
