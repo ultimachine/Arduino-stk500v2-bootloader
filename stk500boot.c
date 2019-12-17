@@ -901,13 +901,13 @@ int main(void)
 	}*/
 /*	lcd_puts("B");
     lcd_goto(21);
-    lcd_puts("Original Prusa i3");
+    lcd_puts(".................");
     lcd_goto(47);
-    lcd_puts("Prusa Research");*/
+    lcd_puts("..............");*/
     lcd_goto(65);
-    lcd_puts("Original Prusa i3");
-    lcd_goto(23);
-    lcd_puts("Prusa Research");
+    lcd_puts("UltiMachine Einsy");
+    //lcd_goto(23);
+    //lcd_puts("..............");
 //    lcd_goto(90);
 //	lcd_puts("boot...    ...");
     lcd_goto(101);
